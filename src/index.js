@@ -35,8 +35,10 @@ class Home extends Component {
       const totalDis = this.totalDistance();
       console.log(totalDis);
       this.setState({
-        message: "Total Distance Covered is  " + Math.ceil(totalDis) + "M"
-      });
+        message: "Total Distance Covered is  " + totalDis.toFixed(2) + "Meters"
+      
+      }); 
+      console.log(totalDis);
     });
   };
 
